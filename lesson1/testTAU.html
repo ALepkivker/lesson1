@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Mobile Web Basic Template" />
+
+    <title>Tizen Mobile Web Basic Application</title>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="ui-page" id="one">
+		<div class="ui-header">
+			<h1>My application with image and resolution</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+			<h2>Home page</h2>
+			<p>
+				Here you can choose wht to do.
+			</p>
+			
+		<ul class="ui-listview">
+			 <li class="ui-group-index">Choose what to do:</li>
+				 <li class="ui-li-anchor"><a href="#popup" data-rel="popup" data-position-to="window">Show image</a></li>
+				 <li class="ui-li-anchor"><a href="#two">Show page with resolution</a></li>
+				 <li class="ui-li-anchor"><a href="#three">Show page about Jquery</a></li>
+				 <li class="ui-li-anchor"><a href="#four">Show page with vid</a></li>
+			</ul>
+			<div id="popup" class="ui-popup center_title_1btn">
+				<div class="ui-popup-header">Here your image</div>
+				<div class="ui-popup-content popup-content-padding"><img id="img" src="images/tizen_32.png"" width="100" height="100"' /></div>
+				<div class="ui-popup-footer">
+					<a class="ui-btn ui-inline" data-rel="back">Button</a>
+		</div>
+			</div>
+		</div><!-- /content -->
+	</div><!-- /page one -->
+    <div class="ui-page" id="two">
+		<div class="ui-header">
+			<h1>Two</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+			<h2>Resolution page</h2>
+			<p>Ur resolution</p>
+			<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+		</div><!-- /content -->
+	</div><!-- /page three-->
+	   <div class="ui-page" id="three">
+		<div class="ui-header">
+			<h1>Third page</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+			<h2>JQuery wiki info</h2>
+			<p id="str1">jQuery — библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML.</p> 
+			<p id="str2">Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими.</p> 
+			<p id="str3">Также библиотека jQuery предоставляет удобный API для работы с AJAX. </p>
+			<p id="str4">Сейчас разработка jQuery ведётся командой jQuery во главе с Джоном Резигом.</p>
+			<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+		</div><!-- /content -->
+	   </div><!-- /page tthree -->
+	   
+	   <div class="ui-page" id="four">
+	   	<div class="ui-header">
+	   		<h1>Fourth page</h1>
+	   	</div>
+	   	<div class="ui-content">
+			<h2>Video</h2>
+			<div>
+				<video width="320" height="240" controls>
+ 					<source src="./video/_TouchCube.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<iframe width="320" height="240" src="https://www.youtube.com/embed/LI7-Cu-9wWM" frameborder="0" allowfullscreen autoplay="1"></iframe>
+			</div>
+			
+			<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+		</div><!-- /content -->
+	   </div>
+	
+	
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script type="text/javascript" src="./lib/jquery.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+
+</html>
